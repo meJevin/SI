@@ -1,0 +1,510 @@
+object AddAutoActionForm: TAddAutoActionForm
+  Left = 1029
+  Height = 316
+  Top = 281
+  Width = 227
+  BorderStyle = bsToolWindow
+  Caption = 'Add Auto Action'
+  ClientHeight = 316
+  ClientWidth = 227
+  Constraints.MaxHeight = 316
+  Constraints.MaxWidth = 227
+  Constraints.MinHeight = 316
+  Constraints.MinWidth = 227
+  FormStyle = fsStayOnTop
+  OnCreate = FormCreate
+  Position = poMainFormCenter
+  LCLVersion = '1.6.0.4'
+  object MouseInputInfoBox: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = InputTypeSelection
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 5
+    Height = 213
+    Top = 62
+    Width = 217
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 5
+    BorderSpacing.Top = 5
+    BorderSpacing.Right = 5
+    BorderSpacing.Bottom = 5
+    Caption = 'Mouse'
+    ClientHeight = 193
+    ClientWidth = 213
+    TabOrder = 2
+    object InputTypeCombo: TComboBox
+      AnchorSideLeft.Control = InputTypeLabel
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = InputTypeLabel
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = MouseInputInfoBox
+      AnchorSideRight.Side = asrBottom
+      Left = 70
+      Height = 23
+      Top = 1
+      Width = 138
+      Anchors = [akTop, akLeft, akRight]
+      AutoSelect = False
+      BorderSpacing.Left = 5
+      BorderSpacing.Right = 5
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'Press a button'
+        'Release a button'
+        'Move'
+      )
+      OnChange = InputTypeComboChange
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'Press a button'
+    end
+    object InputTypeLabel: TLabel
+      AnchorSideLeft.Control = MouseInputInfoBox
+      AnchorSideTop.Control = MouseInputInfoBox
+      Left = 5
+      Height = 15
+      Top = 5
+      Width = 60
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 5
+      Caption = 'Input type: '
+      ParentColor = False
+    end
+    object MovementXEdit: TEdit
+      AnchorSideLeft.Control = MovementXLabel
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = MovementXLabel
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = MouseInputInfoBox
+      AnchorSideRight.Side = asrBottom
+      Left = 78
+      Height = 23
+      Top = 31
+      Width = 130
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 5
+      BorderSpacing.Right = 5
+      Enabled = False
+      TabOrder = 2
+      Text = '0'
+    end
+    object MovementXLabel: TLabel
+      AnchorSideLeft.Control = MouseInputInfoBox
+      AnchorSideTop.Control = InputTypeLabel
+      AnchorSideTop.Side = asrBottom
+      Left = 5
+      Height = 15
+      Top = 35
+      Width = 68
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 15
+      Caption = 'Movement X'
+      Enabled = False
+      ParentColor = False
+    end
+    object MovementYEdit: TEdit
+      AnchorSideLeft.Control = MovementXLabel
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = MovementYLabel
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = MouseInputInfoBox
+      AnchorSideRight.Side = asrBottom
+      Left = 78
+      Height = 23
+      Top = 61
+      Width = 130
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 5
+      BorderSpacing.Right = 5
+      Enabled = False
+      TabOrder = 3
+      Text = '0'
+    end
+    object MovementYLabel: TLabel
+      AnchorSideLeft.Control = MouseInputInfoBox
+      AnchorSideTop.Control = MovementXLabel
+      AnchorSideTop.Side = asrBottom
+      Left = 5
+      Height = 15
+      Top = 65
+      Width = 68
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 15
+      Caption = 'Movement Y'
+      Enabled = False
+      ParentColor = False
+    end
+    object InputButtonCombo: TComboBox
+      AnchorSideLeft.Control = InputButtonLabel
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = InputButtonLabel
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = MouseInputInfoBox
+      AnchorSideRight.Side = asrBottom
+      Left = 80
+      Height = 23
+      Top = 91
+      Width = 128
+      Anchors = [akTop, akLeft, akRight]
+      AutoSelect = False
+      BorderSpacing.Left = 5
+      BorderSpacing.Right = 5
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'LMB'
+        'RMB'
+        'MMB'
+      )
+      Style = csDropDownList
+      TabOrder = 1
+      Text = 'LMB'
+    end
+    object InputButtonLabel: TLabel
+      AnchorSideLeft.Control = MouseInputInfoBox
+      AnchorSideTop.Control = MovementYLabel
+      AnchorSideTop.Side = asrBottom
+      Left = 5
+      Height = 15
+      Top = 95
+      Width = 70
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 15
+      Caption = 'Input button:'
+      ParentColor = False
+    end
+  end
+  object InputTypeSelection: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
+    Left = 5
+    Height = 52
+    Top = 5
+    Width = 217
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    BorderSpacing.Left = 5
+    BorderSpacing.Top = 5
+    BorderSpacing.Right = 5
+    Caption = 'Type'
+    ClientHeight = 32
+    ClientWidth = 213
+    TabOrder = 0
+    object TypeOfInputLabel: TLabel
+      AnchorSideLeft.Control = InputTypeSelection
+      AnchorSideTop.Control = InputTypeSelection
+      Left = 5
+      Height = 15
+      Top = 5
+      Width = 57
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 5
+      Caption = 'Input with:'
+      ParentColor = False
+    end
+    object InputSelectionBox: TComboBox
+      AnchorSideLeft.Control = TypeOfInputLabel
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = TypeOfInputLabel
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = InputTypeSelection
+      AnchorSideRight.Side = asrBottom
+      Left = 72
+      Height = 23
+      Top = 1
+      Width = 136
+      Anchors = [akTop, akLeft, akRight]
+      AutoSelect = False
+      BorderSpacing.Left = 10
+      BorderSpacing.Right = 5
+      ItemHeight = 15
+      ItemIndex = 1
+      Items.Strings = (
+        'Mouse'
+        'Keyboard'
+      )
+      OnChange = InputSelectionBoxChange
+      Style = csDropDownList
+      TabOrder = 0
+      Text = 'Keyboard'
+    end
+  end
+  object KeyboardInputInfoBox: TGroupBox
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = InputTypeSelection
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 5
+    Height = 213
+    Top = 62
+    Width = 217
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 5
+    BorderSpacing.Top = 5
+    BorderSpacing.Right = 5
+    BorderSpacing.Bottom = 5
+    Caption = 'Keyboard'
+    ClientHeight = 193
+    ClientWidth = 213
+    TabOrder = 1
+    object InputTypeLabel1: TLabel
+      AnchorSideLeft.Control = KeyboardInputInfoBox
+      AnchorSideTop.Control = KeyboardInputInfoBox
+      Left = 5
+      Height = 15
+      Top = 5
+      Width = 60
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 5
+      Caption = 'Input type: '
+      ParentColor = False
+    end
+    object InputTypeCombo1: TComboBox
+      AnchorSideLeft.Control = InputTypeLabel1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = InputTypeLabel1
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = MouseInputInfoBox
+      AnchorSideRight.Side = asrBottom
+      Left = 70
+      Height = 23
+      Top = 1
+      Width = 138
+      Anchors = [akTop, akLeft, akRight]
+      AutoSelect = False
+      BorderSpacing.Left = 5
+      BorderSpacing.Right = 5
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        'Press a button'
+        'Release a button'
+      )
+      Style = csDropDownList
+      TabOrder = 2
+      Text = 'Press a button'
+    end
+    object InputButtonLabel1: TLabel
+      AnchorSideLeft.Control = MouseInputInfoBox
+      AnchorSideTop.Control = InputTypeLabel1
+      AnchorSideTop.Side = asrBottom
+      Left = 5
+      Height = 15
+      Top = 35
+      Width = 70
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 15
+      Caption = 'Input button:'
+      ParentColor = False
+    end
+    object DetectKeyButton: TButton
+      AnchorSideLeft.Control = InputTypeCombo1
+      AnchorSideTop.Control = InputButtonLabel1
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Control = KeyboardInputInfoBox
+      AnchorSideRight.Side = asrBottom
+      Left = 85
+      Height = 25
+      Top = 30
+      Width = 113
+      Anchors = [akTop, akLeft, akRight]
+      BorderSpacing.Left = 15
+      BorderSpacing.Right = 15
+      Caption = 'Detect button'
+      OnClick = DetectKeyButtonClick
+      TabOrder = 0
+    end
+    object KeyDetectionGroupBox: TGroupBox
+      AnchorSideLeft.Control = KeyboardInputInfoBox
+      AnchorSideTop.Control = DetectKeyButton
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = KeyboardInputInfoBox
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = KeyboardInputInfoBox
+      AnchorSideBottom.Side = asrBottom
+      Left = 5
+      Height = 123
+      Top = 65
+      Width = 203
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BorderSpacing.Left = 5
+      BorderSpacing.Top = 10
+      BorderSpacing.Right = 5
+      BorderSpacing.Bottom = 5
+      Caption = 'Key detection'
+      ClientHeight = 103
+      ClientWidth = 199
+      TabOrder = 1
+      OnClick = KeyDetectionGroupBoxClick
+      object KeyDetectedLabel: TLabel
+        AnchorSideLeft.Control = KeyDetectionGroupBox
+        AnchorSideTop.Control = KeyDetectionGroupBox
+        Left = 5
+        Height = 15
+        Top = 5
+        Width = 71
+        BorderSpacing.Left = 5
+        BorderSpacing.Top = 5
+        Caption = 'Key detected:'
+        ParentColor = False
+      end
+      object KeyDetectedEdit: TEdit
+        AnchorSideLeft.Control = KeyDetectedLabel
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = KeyDetectedLabel
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = KeyDetectionGroupBox
+        AnchorSideRight.Side = asrBottom
+        Left = 81
+        Height = 23
+        Top = 1
+        Width = 113
+        Anchors = [akTop, akLeft, akRight]
+        AutoSelect = False
+        BorderSpacing.Left = 5
+        BorderSpacing.Right = 5
+        ReadOnly = True
+        TabOrder = 0
+      end
+      object VKDetectedLabel: TLabel
+        AnchorSideLeft.Control = KeyDetectionGroupBox
+        AnchorSideTop.Control = KeyDetectedEdit
+        AnchorSideTop.Side = asrBottom
+        Left = 5
+        Height = 15
+        Top = 34
+        Width = 66
+        BorderSpacing.Left = 5
+        BorderSpacing.Top = 10
+        Caption = 'Virtual code:'
+        ParentColor = False
+      end
+      object VKDetectedEdit: TEdit
+        AnchorSideLeft.Control = VKDetectedLabel
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = VKDetectedLabel
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = KeyDetectionGroupBox
+        AnchorSideRight.Side = asrBottom
+        Left = 76
+        Height = 23
+        Top = 30
+        Width = 118
+        Anchors = [akTop, akLeft, akRight]
+        AutoSelect = False
+        BorderSpacing.Left = 5
+        BorderSpacing.Right = 5
+        ReadOnly = True
+        TabOrder = 1
+      end
+      object ScanCodeDetectedLabel: TLabel
+        AnchorSideLeft.Control = KeyDetectionGroupBox
+        AnchorSideTop.Control = VKDetectedEdit
+        AnchorSideTop.Side = asrBottom
+        Left = 5
+        Height = 15
+        Top = 63
+        Width = 57
+        BorderSpacing.Left = 5
+        BorderSpacing.Top = 10
+        Caption = 'Scan code:'
+        ParentColor = False
+      end
+      object ScanCodeDetectedEdit: TEdit
+        AnchorSideLeft.Control = ScanCodeDetectedLabel
+        AnchorSideLeft.Side = asrBottom
+        AnchorSideTop.Control = ScanCodeDetectedLabel
+        AnchorSideTop.Side = asrCenter
+        AnchorSideRight.Control = KeyDetectionGroupBox
+        AnchorSideRight.Side = asrBottom
+        Left = 67
+        Height = 23
+        Top = 59
+        Width = 127
+        Anchors = [akTop, akLeft, akRight]
+        AutoSelect = False
+        BorderSpacing.Left = 5
+        BorderSpacing.Right = 5
+        ReadOnly = True
+        TabOrder = 2
+      end
+    end
+  end
+  object AddActionButton: TButton
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 120
+    Height = 25
+    Top = 288
+    Width = 43
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    BorderSpacing.Right = 5
+    BorderSpacing.Bottom = 6
+    Caption = 'Add'
+    OnClick = AddActionButtonClick
+    TabOrder = 3
+  end
+  object DelayLabel: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = DelayEdit
+    AnchorSideTop.Side = asrCenter
+    Left = 10
+    Height = 15
+    Hint = 'The amount of time in milliseconds that the program will wait after executing this input simulation'
+    Top = 293
+    Width = 32
+    BorderSpacing.Left = 10
+    Caption = 'Delay:'
+    ParentColor = False
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object DelayEdit: TEdit
+    AnchorSideLeft.Control = DelayLabel
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideTop.Control = AddActionButton
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Control = AddActionButton
+    Left = 47
+    Height = 23
+    Top = 289
+    Width = 68
+    Anchors = [akTop, akLeft, akRight]
+    AutoSelect = False
+    BorderSpacing.Left = 5
+    BorderSpacing.Right = 5
+    NumbersOnly = True
+    OnEditingDone = DelayEditEditingDone
+    ParentShowHint = False
+    TabOrder = 4
+    Text = '2'
+  end
+  object OKButton: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 168
+    Height = 25
+    Top = 288
+    Width = 54
+    Anchors = [akTop, akLeft, akRight]
+    AutoSize = True
+    BorderSpacing.Right = 5
+    BorderSpacing.Bottom = 6
+    Caption = 'OK'
+    OnClick = OKButtonClick
+    TabOrder = 5
+  end
+end

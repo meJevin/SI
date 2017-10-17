@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="22">
+      <Unit0>
+        <Filename Value="SI.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="52" Y="17"/>
+        <IsLocked Value="True"/>
+        <ExtraEditorCount Value="1"/>
+        <ExtraEditor1>
+          <EditorIndex Value="-1"/>
+          <WindowIndex Value="-1"/>
+          <TopLine Value="-1"/>
+          <CursorPos X="-1" Y="-1"/>
+        </ExtraEditor1>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="MainUnit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="507"/>
+        <CursorPos X="33" Y="513"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="AddAutoActionForm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AddAutoActionForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="58"/>
+        <CursorPos X="29" Y="71"/>
+        <UsageCount Value="202"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="SettingsFormUnit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SettingsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="158"/>
+        <CursorPos X="20" Y="166"/>
+        <UsageCount Value="163"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="popupunit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PopupForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="PopupUnit"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="100"/>
+        <CursorPos X="43" Y="123"/>
+        <UsageCount Value="82"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="units\MainUnit.pas"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="311"/>
+        <CursorPos X="19" Y="316"/>
+        <UsageCount Value="17"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="units\popupunit.pas"/>
+        <ComponentName Value="PopupForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="17"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="units\SettingsFormUnit.pas"/>
+        <ComponentName Value="SettingsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="17"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="units\AddAutoActionForm.pas"/>
+        <ComponentName Value="AddAutoActionForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="17"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="changedelayform.pas"/>
+        <ComponentName Value="ChangeDelayFormVar"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="ChangeDelayForm"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="20" Y="26"/>
+        <UsageCount Value="120"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="G:\Lazarus\lcl\interfaces\win32\win32listsl.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="140"/>
+        <CursorPos Y="158"/>
+        <UsageCount Value="51"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="G:\Lazarus\lcl\customtimer.pas"/>
+        <UnitName Value="CustomTimer"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="159"/>
+        <CursorPos Y="176"/>
+        <UsageCount Value="50"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="G:\Lazarus\lcl\interfaces\win32\win32callback.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2734"/>
+        <CursorPos Y="2762"/>
+        <UsageCount Value="49"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="G:\Lazarus\lcl\include\application.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1376"/>
+        <CursorPos Y="1395"/>
+        <UsageCount Value="49"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="G:\Lazarus\lcl\interfaces\win32\win32object.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="341"/>
+        <CursorPos Y="366"/>
+        <UsageCount Value="49"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="G:\Lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="592"/>
+        <CursorPos X="17" Y="601"/>
+        <UsageCount Value="44"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="G:\Lazarus\lcl\include\customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="458"/>
+        <CursorPos X="43" Y="482"/>
+        <UsageCount Value="18"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="G:\Lazarus\lcl\include\dragmanager.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="170"/>
+        <CursorPos Y="186"/>
+        <UsageCount Value="16"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="G:\Lazarus\lcl\grids.pas"/>
+        <UnitName Value="Grids"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2858"/>
+        <CursorPos Y="2875"/>
+        <UsageCount Value="14"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="G:\Lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="420"/>
+        <CursorPos X="3" Y="437"/>
+        <UsageCount Value="1"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="G:\Lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2044"/>
+        <CursorPos X="19" Y="792"/>
+        <UsageCount Value="7"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="G:\Lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="1492"/>
+        <CursorPos X="15" Y="1508"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit21>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="507" TopLine="483"/>
+      </Position1>
+      <Position2>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="530" Column="15" TopLine="508"/>
+      </Position2>
+      <Position3>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="266" Column="24" TopLine="311"/>
+      </Position3>
+      <Position4>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="343" Column="18" TopLine="316"/>
+      </Position4>
+      <Position5>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="485" Column="15" TopLine="469"/>
+      </Position5>
+      <Position6>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="475" Column="41" TopLine="464"/>
+      </Position6>
+      <Position7>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="251" Column="5" TopLine="232"/>
+      </Position7>
+      <Position8>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="240" Column="25" TopLine="223"/>
+      </Position8>
+      <Position9>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="306" Column="26" TopLine="265"/>
+      </Position9>
+      <Position10>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="139" Column="87" TopLine="133"/>
+      </Position10>
+      <Position11>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="238" TopLine="232"/>
+      </Position11>
+      <Position12>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="240" Column="27" TopLine="232"/>
+      </Position12>
+      <Position13>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="234" TopLine="229"/>
+      </Position13>
+      <Position14>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="236" TopLine="229"/>
+      </Position14>
+      <Position15>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="237" TopLine="229"/>
+      </Position15>
+      <Position16>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="240" TopLine="229"/>
+      </Position16>
+      <Position17>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="242" TopLine="229"/>
+      </Position17>
+      <Position18>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="254" TopLine="229"/>
+      </Position18>
+      <Position19>
+        <Filename Value="G:\Lazarus\lcl\customtimer.pas"/>
+        <Caret Line="176" Column="3" TopLine="159"/>
+      </Position19>
+      <Position20>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="244" Column="48" TopLine="229"/>
+      </Position20>
+      <Position21>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="236" TopLine="229"/>
+      </Position21>
+      <Position22>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="237" TopLine="229"/>
+      </Position22>
+      <Position23>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="240" TopLine="229"/>
+      </Position23>
+      <Position24>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="242" TopLine="229"/>
+      </Position24>
+      <Position25>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="254" Column="22" TopLine="229"/>
+      </Position25>
+      <Position26>
+        <Filename Value="G:\Lazarus\lcl\customtimer.pas"/>
+        <Caret Line="176" Column="3" TopLine="159"/>
+      </Position26>
+      <Position27>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="102" Column="21" TopLine="133"/>
+      </Position27>
+      <Position28>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="449" Column="31" TopLine="435"/>
+      </Position28>
+      <Position29>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="551" Column="31" TopLine="542"/>
+      </Position29>
+      <Position30>
+        <Filename Value="MainUnit.pas"/>
+        <Caret Line="236" Column="3" TopLine="234"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectSession>
+  <Debugging>
+    <Watches Count="18">
+      <Item1>
+        <Expression Value="newWaitInterval"/>
+      </Item1>
+      <Item2>
+        <Expression Value="action"/>
+      </Item2>
+      <Item3>
+        <Expression Value="newInput"/>
+      </Item3>
+      <Item4>
+        <Expression Value="temp"/>
+      </Item4>
+      <Item5>
+        <Expression Value="WaitTimer"/>
+      </Item5>
+      <Item6>
+        <Expression Value="j"/>
+      </Item6>
+      <Item7>
+        <Expression Value="AmountOfNoDelayInputs"/>
+      </Item7>
+      <Item8>
+        <Expression Value="lastStoppedAutoActionIndex"/>
+      </Item8>
+      <Item9>
+        <Expression Value="i"/>
+      </Item9>
+      <Item10>
+        <Expression Value="tempAction"/>
+      </Item10>
+      <Item11>
+        <Expression Value="lol"/>
+      </Item11>
+      <Item12>
+        <Expression Value="indexToChange"/>
+      </Item12>
+      <Item13>
+        <Expression Value="count"/>
+      </Item13>
+      <Item14>
+        <Expression Value="tempPtr"/>
+      </Item14>
+      <Item15>
+        <Expression Value="tempAction"/>
+      </Item15>
+      <Item16>
+        <Expression Value="CurrExecActionShape.Top"/>
+      </Item16>
+      <Item17>
+        <Expression Value="SettingsForm.ExecType"/>
+      </Item17>
+      <Item18>
+        <Expression Value="lastStoppedAutoActionIndex"/>
+      </Item18>
+    </Watches>
+  </Debugging>
+</CONFIG>
